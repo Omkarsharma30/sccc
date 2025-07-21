@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Study Care & Computer Classes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="LOGO/logo.jpeg" alt="Study Care & Computer Classes Logo" class="logo-img">
+                    <span>Study Care & Computer Classes</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries or information</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help you with any questions about our courses, admission process, or general inquiries. Feel free to reach out to us through any of the following methods.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>Maranpur Nawada<br>
+                                Bihar, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+917781089851">+91 7781089851</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/917781089851" target="_blank">+91 7781089851</a></p>
+                                <p>Quick response for urgent queries</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:studycareandcomputerclasses@gmail.com">studycareandcomputerclasses@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Office Hours</h3>
+                                <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                                Sunday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="quick-actions">
+                        <a href="tel:+917781089851" class="action-btn">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Now</span>
+                        </a>
+                        <a href="https://wa.me/917781089851" class="action-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:studycareandcomputerclasses@gmail.com" class="action-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Us</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form method="POST" id="contactForm" class="form">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="b98071bf-4719-412a-8980-4908d1be0f07">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - Study Care & Computer Classes">
+                        <input type="hidden" name="from_name" value="Study Care & Computer Classes Contact Form">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="form-input" pattern="[0-9]{10}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required class="form-select">
+                                <option value="">Select Subject</option>
+                                <option value="Course Inquiry - DCA">Course Inquiry - DCA</option>
+                                <option value="Course Inquiry - ADCA">Course Inquiry - ADCA</option>
+                                <option value="Course Inquiry - CCA">Course Inquiry - CCA</option>
+                                <option value="Course Inquiry - Web Design">Course Inquiry - Web Design & Development</option>
+                                <option value="Course Inquiry - AutoCAD">Course Inquiry - AutoCAD Design</option>
+                                <option value="Course Inquiry - Graphic Design">Course Inquiry - Graphic Design Suite</option>
+                                <option value="Course Inquiry - Java Programming">Course Inquiry - Java Programming</option>
+                                <option value="Course Inquiry - Full Stack">Course Inquiry - Full Stack Web Development</option>
+                                <option value="Course Inquiry - Tally GST">Course Inquiry - Tally with GST</option>
+                                <option value="Course Inquiry - Digital Marketing">Course Inquiry - Digital Marketing</option>
+                                <option value="Course Inquiry - Advanced MS Office">Course Inquiry - Advanced MS Office</option>
+                                <option value="Course Inquiry - Professional Typing">Course Inquiry - Professional Typing</option>
+                                <option value="Admission Information">Admission Information</option>
+                                <option value="Fee Structure">Fee Structure</option>
+                                <option value="Batch Timings">Batch Timings</option>
+                                <option value="Certificate Verification">Certificate Verification</option>
+                                <option value="General Query">General Query</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Suggestion">Suggestion</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="form-textarea" placeholder="Please describe your query in detail..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy_accepted" required>
+                            <label for="privacy">I agree to be contacted by Study Care & Computer Classes regarding my inquiry *</label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="contactResult" style="margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us on Map</h2>
+            <div class="map-container">
+                <!-- Study Care & Computer Classes Location -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.0447431788513!2d84.53434941744384!3d26.388930499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39931fb31c5e9ae1%3A0x17593b8139384bf!2sStudy%20care%20and%20computer%20classes!5e0!3m2!1sen!2sin!4v1709667547932!5m2!1sen!2sin"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <p><strong>Note:</strong> Please call before visiting to ensure someone is available to assist you. We recommend scheduling an appointment for detailed course discussions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your office hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our office is open Monday to Saturday from 9:00 AM to 7:00 PM, and Sunday from 10:00 AM to 2:00 PM. We recommend calling before visiting to ensure availability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I verify my certificate?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can verify your certificate by visiting our Results page and using the certificate verification tool, or by contacting our office directly with your certificate number.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide job placement assistance?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide job placement assistance to our students after successful completion of their courses. We have tie-ups with various companies and organizations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the admission process?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The admission process involves filling the application form, document verification, fee payment, and enrollment in your preferred batch. Visit our Admission page for detailed information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Study Care & Computer Classes</h3>
+                    <p>Empowering students with quality education and technical skills for a brighter future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 7781089851</p>
+                    <p><i class="fas fa-envelope"></i> studycareandcomputerclasses@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maranpur Nawada, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Study Care & Computer Classes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/simple-nav.js"></script>
+    <script>
+        // Web3Forms JavaScript handling for Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const contactResult = document.getElementById('contactResult');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get the submit button
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            
+            // Change button to sending state
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitButton.disabled = true;
+            
+            const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            
+            contactResult.style.display = "block";
+            contactResult.innerHTML = "Please wait...";
+            contactResult.style.background = "#e3f2fd";
+            contactResult.style.color = "#1976d2";
+            contactResult.style.border = "1px solid #bbdefb";
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    contactResult.innerHTML = "✅ Message sent successfully! We'll get back to you soon.";
+                    contactResult.style.background = "#e8f5e8";
+                    contactResult.style.color = "#2e7d32";
+                    contactResult.style.border = "1px solid #c8e6c9";
+                } else {
+                    console.log(response);
+                    contactResult.innerHTML = "❌ " + json.message;
+                    contactResult.style.background = "#ffebee";
+                    contactResult.style.color = "#c62828";
+                    contactResult.style.border = "1px solid #ffcdd2";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                contactResult.innerHTML = "❌ Something went wrong! Please try again.";
+                contactResult.style.background = "#ffebee";
+                contactResult.style.color = "#c62828";
+                contactResult.style.border = "1px solid #ffcdd2";
+            })
+            .then(function() {
+                // Reset button state
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+                
+                contactForm.reset();
+                setTimeout(() => {
+                    contactResult.style.display = "none";
+                }, 5000);
+            });
+        });
+
+        // FAQ Toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                question.addEventListener('click', () => {
+                    const isOpen = answer.style.display === 'block';
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        otherItem.querySelector('.faq-answer').style.display = 'none';
+                        otherItem.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Toggle current item
+                    if (!isOpen) {
+                        answer.style.display = 'block';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

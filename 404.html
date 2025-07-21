@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Study Care & Computer Classes</title>
+    <link rel="stylesheet" href="css/404.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="LOGO/logo.jpeg" alt="Study Care & Computer Classes Logo" class="logo-img">
+                    <span>Study Care & Computer Classes</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 404 Error Section -->
+    <section class="error-404">
+        <div class="container">
+            <div class="error-content">
+                <!-- Animated 404 Number -->
+                <div class="error-number">
+                    <span class="digit" id="digit1">4</span>
+                    <span class="digit zero" id="digit2">0</span>
+                    <span class="digit" id="digit3">4</span>
+                </div>
+
+                <!-- Error Message -->
+                <div class="error-message">
+                    <h1>Oops! Page Not Found</h1>
+                    <p>The page you're looking for seems to have gone on a study break. Don't worry, it happens to the best of us!</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-section">
+                    <h3><i class="fas fa-search"></i> What are you looking for?</h3>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search for courses, results, or information..." class="search-input">
+                        <button onclick="performSearch()" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="quick-links">
+                    <h3><i class="fas fa-compass"></i> Popular Destinations</h3>
+                    <div class="links-grid">
+                        <a href="index.html" class="quick-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home Page</span>
+                        </a>
+                        <a href="courses.html" class="quick-link">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Our Courses</span>
+                        </a>
+                        <a href="results.html" class="quick-link">
+                            <i class="fas fa-certificate"></i>
+                            <span>Results & Certificates</span>
+                        </a>
+                        <a href="admission.html" class="quick-link">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admission Form</span>
+                        </a>
+                        <a href="contact.html" class="quick-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Help Section -->
+                <div class="help-section">
+                    <h3><i class="fas fa-life-ring"></i> Need Help?</h3>
+                    <p>Can't find what you're looking for? Our team is here to help!</p>
+                    <div class="help-buttons">
+                        <a href="tel:+917781089851" class="help-btn">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Us</span>
+                            <small>+91 7781089851</small>
+                        </a>
+                        <a href="https://wa.me/917781089851" class="help-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                            <small>Quick Support</small>
+                        </a>
+                        <a href="mailto:studycareandcomputerclasses@gmail.com" class="help-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                            <small>Send Message</small>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="fun-facts">
+                    <h3><i class="fas fa-lightbulb"></i> Did You Know?</h3>
+                    <div class="fact-item" id="factDisplay">
+                        <p id="factText">Loading interesting fact...</p>
+                    </div>
+                    <button onclick="getNewFact()" class="fact-btn">
+                        <i class="fas fa-sync-alt"></i> Another Fact
+                    </button>
+                </div>
+
+                <!-- Back Button -->
+                <div class="back-section">
+                    <button onclick="goBack()" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </button>
+                    <span class="or-text">or</span>
+                    <a href="index.html" class="home-btn">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating Animation Elements -->
+            <div class="floating-elements">
+                <div class="floating-icon" style="--delay: 0s; --x: 10%; --y: 20%;">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1s; --x: 80%; --y: 30%;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2s; --x: 20%; --y: 70%;">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3s; --x: 70%; --y: 80%;">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 4s; --x: 90%; --y: 10%;">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Study Care & Computer Classes</h3>
+                    <p>Empowering students with quality education and technical skills for a brighter future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 7781089851</p>
+                    <p><i class="fas fa-envelope"></i> studycareandcomputerclasses@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maranpur Nawada, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Study Care & Computer Classes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/404.js"></script>
+    <script src="js/simple-nav.js"></script>
+</body>
+</html>

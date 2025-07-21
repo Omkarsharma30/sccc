@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Study Care & Computer Classes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="LOGO/logo.jpeg" alt="Study Care & Computer Classes Logo" class="logo-img">
+                    <span>Study Care & Computer Classes</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="admission.html" class="active">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admission Form</h1>
+            <p>Take the first step towards your bright future</p>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Fill Application</h3>
+                    <p>Complete the admission form below with accurate information</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Submit Documents</h3>
+                    <p>Bring required documents to our office for verification</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Fee Payment</h3>
+                    <p>Pay the course fee and get your admission confirmed</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Start Classes</h3>
+                    <p>Begin your learning journey with our expert faculty</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form -->
+    <section class="admission-form">
+        <div class="container">
+            <div class="form-container">
+                <h2><i class="fas fa-user-graduate"></i> Student Admission Form</h2>
+                <p>Please fill all the required fields to submit your admission application.</p>
+                
+                <form method="POST" id="admissionForm" class="form">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="b98071bf-4719-412a-8980-4908d1be0f07">
+                    <input type="hidden" name="subject" value="New Admission Application - Study Care & Computer Classes">
+                    <input type="hidden" name="from_name" value="Study Care & Computer Classes Admission Form">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentName">Student Name *</label>
+                            <input type="text" id="studentName" name="student_name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="fatherName">Father's Name *</label>
+                            <input type="text" id="fatherName" name="father_name" required class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number *</label>
+                            <input type="tel" id="mobile" name="mobile_number" required class="form-input" pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="course">Course Name *</label>
+                            <select id="course" name="course_name" required class="form-select">
+                                <option value="">Select Course</option>
+                                <optgroup label="Diploma & Certificate Courses">
+                                    <option value="DCA">DCA (Diploma in Computer Applications) - 6 Months</option>
+                                    <option value="ADCA">ADCA (Advanced Diploma in Computer Applications) - 12 Months</option>
+                                    <option value="CCA">CCA (Certificate in Computer Applications) - 3 Months</option>
+                                </optgroup>
+                                <optgroup label="Design & Development">
+                                    <option value="Web Design">Web Design & Development - 4 Months</option>
+                                    <option value="AutoCAD">AutoCAD Design - 3 Months</option>
+                                    <option value="Graphic Design">Graphic Design Suite - 4 Months</option>
+                                    <option value="Full Stack">Full Stack Web Development - 6 Months</option>
+                                </optgroup>
+                                <optgroup label="Programming & Software">
+                                    <option value="Java Programming">Java Programming - 4 Months</option>
+                                    <option value="Advanced MS Office">Advanced MS Office - 3 Months</option>
+                                </optgroup>
+                                <optgroup label="Accounting & Business">
+                                    <option value="Tally GST">Tally with GST - 3 Months</option>
+                                </optgroup>
+                                <optgroup label="Digital Skills">
+                                    <option value="Professional Typing">Professional Typing Course - 2 Months</option>
+                                    <option value="Digital Marketing">Digital Marketing - 3 Months</option>
+                                </optgroup>
+                                <optgroup label="Academic Coaching">
+                                    <option value="Class 9-10">Class 9-10 Coaching</option>
+                                    <option value="Class 11-12">Class 11-12 Coaching</option>
+                                    <option value="Competitive Exam">Competitive Exam Coaching</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Batch Time</label>
+                            <select id="preferredTime" name="preferred_time" class="form-select">
+                                <option value="">Select Time</option>
+                                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (1 PM - 4 PM)">Afternoon (1 PM - 4 PM)</option>
+                                <option value="Evening (5 PM - 8 PM)">Evening (5 PM - 8 PM)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth</label>
+                            <input type="date" id="dateOfBirth" name="date_of_birth" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification">Educational Qualification</label>
+                            <select id="qualification" name="qualification" class="form-select">
+                                <option value="">Select Qualification</option>
+                                <option value="8th Pass">8th Pass</option>
+                                <option value="10th Pass">10th Pass</option>
+                                <option value="12th Pass">12th Pass</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Post Graduate">Post Graduate</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" class="form-textarea" placeholder="Enter your complete address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Previous Computer Experience (if any)</label>
+                        <textarea id="experience" name="computer_experience" rows="2" class="form-textarea" placeholder="Describe any previous computer knowledge or experience"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Message / Questions</label>
+                        <textarea id="message" name="message" rows="3" class="form-textarea" placeholder="Any specific requirements or questions you have"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms_accepted" required>
+                        <label for="terms">I agree to the terms and conditions and confirm that all information provided is accurate *</label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                        <div id="admissionResult" style="margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Admission Requirements -->
+            <div class="admission-requirements">
+                <h3>Required Documents</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-check"></i> Latest passport size photographs (2 copies)</li>
+                    <li><i class="fas fa-check"></i> Educational certificate copies</li>
+                    <li><i class="fas fa-check"></i> Identity proof (Aadhar Card/PAN Card)</li>
+                    <li><i class="fas fa-check"></i> Address proof</li>
+                    <li><i class="fas fa-check"></i> Duly filled admission form</li>
+                </ul>
+
+                <h3>Important Notes</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-info-circle"></i> Admission is subject to document verification</li>
+                    <li><i class="fas fa-info-circle"></i> Course fees must be paid at the time of admission</li>
+                    <li><i class="fas fa-info-circle"></i> Batch timings are subject to availability</li>
+                    <li><i class="fas fa-info-circle"></i> We will contact you within 24 hours of form submission</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="admission-contact">
+        <div class="container">
+            <h2>Need Help with Admission?</h2>
+            <p>Our admission counselors are here to help you choose the right course and guide you through the admission process.</p>
+            <div class="contact-options">
+                <a href="tel:+917781089851" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                    <small>+91 7781089851</small>
+                </a>
+                <a href="https://wa.me/917781089851" class="contact-option" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                    <small>Quick Response</small>
+                </a>
+                <a href="contact.html" class="contact-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Visit Office</span>
+                    <small>Get Directions</small>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Study Care & Computer Classes</h3>
+                    <p>Empowering students with quality education and technical skills for a brighter future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 7781089851</p>
+                    <p><i class="fas fa-envelope"></i> studycareandcomputerclasses@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maranpur Nawada, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Study Care & Computer Classes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/simple-nav.js"></script>
+    
+    <script>
+        // Web3Forms JavaScript handling for Admission Form
+        document.addEventListener('DOMContentLoaded', function() {
+            const admissionForm = document.getElementById('admissionForm');
+            const admissionResult = document.getElementById('admissionResult');
+
+            if (admissionForm && admissionResult) {
+                admissionForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get the submit button
+                    const submitButton = admissionForm.querySelector('button[type="submit"]');
+                    const originalButtonText = submitButton.innerHTML;
+                    
+                    // Change button to sending state
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitButton.disabled = true;
+                    
+                    const formData = new FormData(admissionForm);
+                    const object = Object.fromEntries(formData);
+                    const json = JSON.stringify(object);
+                    
+                    admissionResult.style.display = "block";
+                    admissionResult.innerHTML = "Please wait...";
+                    admissionResult.style.background = "#e3f2fd";
+                    admissionResult.style.color = "#1976d2";
+                    admissionResult.style.border = "1px solid #bbdefb";
+
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            admissionResult.innerHTML = "✅ Admission application submitted successfully! We will contact you within 24 hours.";
+                            admissionResult.style.background = "#e8f5e8";
+                            admissionResult.style.color = "#2e7d32";
+                            admissionResult.style.border = "1px solid #c8e6c9";
+                        } else {
+                            console.log(response);
+                            admissionResult.innerHTML = "❌ " + json.message;
+                            admissionResult.style.background = "#ffebee";
+                            admissionResult.style.color = "#c62828";
+                            admissionResult.style.border = "1px solid #ffcdd2";
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        admissionResult.innerHTML = "❌ Something went wrong! Please try again.";
+                        admissionResult.style.background = "#ffebee";
+                        admissionResult.style.color = "#c62828";
+                        admissionResult.style.border = "1px solid #ffcdd2";
+                    })
+                    .then(function() {
+                        // Reset button state
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                        
+                        admissionForm.reset();
+                        setTimeout(() => {
+                            admissionResult.style.display = "none";
+                        }, 5000);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

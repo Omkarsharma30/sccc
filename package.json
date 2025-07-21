@@ -1,0 +1,33 @@
+{
+  "name": "study-care-computer-classes",
+  "version": "1.0.0",
+  "description": "Study Care & Computer Classes - Clean URL Static Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build-clean-urls.js",
+    "serve": "npx http-server build -p 3000 -o",
+    "dev": "npx http-server . -p 3000 -o",
+    "clean": "rimraf build",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir=build",
+    "deploy:gh-pages": "npm run build && gh-pages -d build"
+  },
+  "keywords": [
+    "education",
+    "computer-classes",
+    "static-website",
+    "clean-urls"
+  ],
+  "author": "Study Care & Computer Classes",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5",
+    "gh-pages": "^6.1.1",
+    "netlify-cli": "^17.15.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/study-care-computer-classes.git"
+  },
+  "homepage": "https://your-domain.com"
+}

@@ -1,0 +1,486 @@
+/* 404 Page Styles */
+
+/* Import base styles */
+@import url('style.css');
+
+/* 404 Page Specific Styles */
+.error-404 {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-404 .container {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+/* Animated 404 Number */
+.error-number {
+    font-size: 8rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.digit {
+    display: inline-block;
+    animation: bounce 2s infinite;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.digit:nth-child(1) {
+    animation-delay: 0s;
+    color: #ff6b6b;
+}
+
+.digit:nth-child(2) {
+    animation-delay: 0.2s;
+    color: #ffd93d;
+    position: relative;
+}
+
+.digit:nth-child(3) {
+    animation-delay: 0.4s;
+    color: #6bcf7f;
+}
+
+/* Zero with special animation */
+.zero {
+    position: relative;
+    overflow: hidden;
+}
+
+.zero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite;
+}
+
+/* Error Message */
+.error-message {
+    margin-bottom: 3rem;
+}
+
+.error-message h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.error-message p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Search Section */
+.search-section {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.search-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.search-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    padding: 1rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: linear-gradient(45deg, #764ba2, #667eea);
+    transform: scale(1.05);
+}
+
+/* Quick Links */
+.quick-links {
+    margin-bottom: 3rem;
+}
+
+.quick-links h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.quick-link i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Help Section */
+.help-section {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.help-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.help-section p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.help-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.help-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.help-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-3px);
+}
+
+.help-btn i {
+    font-size: 1.5rem;
+}
+
+.help-btn small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Fun Facts */
+.fun-facts {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.fun-facts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.fact-item {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.fact-btn:hover {
+    background: linear-gradient(45deg, #764ba2, #667eea);
+    transform: scale(1.05);
+}
+
+/* Back Section */
+.back-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.back-btn, .home-btn {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-btn {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+
+.home-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+.back-btn:hover, .home-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.or-text {
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+}
+
+/* Floating Animation Elements */
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-icon {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    font-size: 2rem;
+    color: rgba(255,255,255,0.1);
+    animation: float 6s ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .error-number {
+        font-size: 5rem;
+        gap: 0.5rem;
+    }
+    
+    .error-message h1 {
+        font-size: 2rem;
+    }
+    
+    .error-message p {
+        font-size: 1rem;
+    }
+    
+    .search-section, .help-section, .fun-facts {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .links-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+    
+    .quick-link {
+        padding: 1rem;
+    }
+    
+    .quick-link i {
+        font-size: 1.5rem;
+    }
+    
+    .help-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .back-section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .floating-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-number {
+        font-size: 4rem;
+    }
+    
+    .error-message h1 {
+        font-size: 1.5rem;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .search-input, .search-btn {
+        border-radius: 0;
+    }
+    
+    .search-input {
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .search-btn {
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark mode considerations */
+@media (prefers-color-scheme: dark) {
+    .search-input {
+        background: #2a2a2a;
+        color: white;
+    }
+    
+    .search-input::placeholder {
+        color: #888;
+    }
+}
+
+/* Print styles */
+@media print {
+    .floating-elements,
+    .search-section,
+    .help-section {
+        display: none;
+    }
+    
+    .error-404 {
+        background: white;
+        color: black;
+    }
+    
+    .error-number {
+        color: black;
+    }
+}

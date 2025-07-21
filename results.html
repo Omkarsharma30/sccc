@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results - Study Care & Computer Classes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="LOGO/logo.jpeg" alt="Study Care & Computer Classes Logo" class="logo-img">
+                    <span>Study Care & Computer Classes</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="results.html" class="active">Results</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Student Results / Receipts</h1>
+            <p>View and verify student certificates and results</p>
+        </div>
+    </section>
+
+    <!-- Certificate Verification -->
+    <section class="certificate-verification">
+        <div class="container">
+            <div class="verification-card">
+                <h2><i class="fas fa-search"></i> Verify Certificate</h2>
+                <p>Enter Enrollment No number to verify authenticity</p>
+                <div class="verification-form">
+                    <input type="text" id="certNumber" placeholder="Enter Certificate Number" class="form-input">
+                    <button onclick="verifyCertificate()" class="btn btn-primary">Verify Certificate</button>
+                </div>
+                
+                
+                <div id="verificationResult" class="verification-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Certificate Details Section -->
+    <section class="certificate-details" id="certificateDetails" style="display: none;">
+        <div class="container">
+            <div class="certificate-card">
+                <div class="certificate-header">
+                    <h2><i class="fas fa-certificate"></i> Certificate Details</h2>
+                </div>
+                <div class="student-info" id="studentInfo">
+                    <!-- Student details will be populated here -->
+                </div>
+                <div class="certificate-actions">
+                    <button onclick="downloadCertificate()" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download PDF Certificate
+                    </button>
+                    <button onclick="viewCertificatePDF()" class="btn btn-success">
+                        <i class="fas fa-eye"></i> View PDF Certificate
+                    </button>
+                    <button onclick="printCertificate()" class="btn btn-secondary">
+                        <i class="fas fa-print"></i> Print Certificate
+                    </button>
+                    <button onclick="resetVerification()" class="btn btn-outline">
+                        <i class="fas fa-search"></i> Verify Another Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Certificate Notice -->
+    <section class="original-certificate-notice" id="originalCertificateNotice" style="display: none;">
+        <div class="container">
+            <div class="notice-card">
+                <div class="notice-header">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Original Certificate Information</h3>
+                </div>
+                <div class="notice-content">
+                    <div class="notice-main">
+                        <h4>📜 Need Your Original Certificate?</h4>
+                        <p>For original hard copy certificates, please contact <strong>Study Care & Computer Classes</strong> directly. We provide both digital verification and physical certificate collection services.</p>
+                        
+                        <div class="certificate-types">
+                            <div class="cert-type">
+                                <i class="fas fa-file-pdf"></i>
+                                <span><strong>Digital Certificate:</strong> Download instantly after verification</span>
+                            </div>
+                            <div class="cert-type">
+                                <i class="fas fa-award"></i>
+                                <span><strong>Original Certificate:</strong> Collect from our office or request home delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-info">
+                        <h4>📍 Original Certificate Collection:</h4>
+                        <ul>
+                            <li><i class="fas fa-building"></i> <strong>Office Visit:</strong> Bring your ID proof and receipt</li>
+                            <li><i class="fas fa-shipping-fast"></i> <strong>Home Delivery:</strong> Available for verified students (charges apply)</li>
+                            <li><i class="fas fa-clock"></i> <strong>Processing Time:</strong> Same day for office collection, 2-3 days for delivery</li>
+                            <li><i class="fas fa-shield-alt"></i> <strong>Security:</strong> All original certificates are laminated and security sealed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="help-section">
+        <div class="container">
+            <div class="help-card">
+                <h3><i class="fas fa-question-circle"></i> Need Help?</h3>
+                <p>If you're having trouble finding your certificate or need assistance with original certificate collection, please contact our office directly.</p>
+                <div class="contact-options">
+                    <a href="tel:+917781089851" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/917781089851" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Form
+                    </a>
+                </div>
+                <div class="office-hours">
+                    <h4><i class="fas fa-clock"></i> Office Hours for Certificate Collection:</h4>
+                    <p>Monday to Saturday: 9:00 AM - 6:00 PM<br>
+                    Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Study Care & Computer Classes</h3>
+                    <p>Empowering students with quality education and technical skills for a brighter future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 7781089851</p>
+                    <p><i class="fas fa-envelope"></i> studycareandcomputerclasses@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maranpur Nawada, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Study Care & Computer Classes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/simple-nav.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>
